@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+ <title>
+            Landing Page Login
+        </title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <style>
+
+            img{
+                position: absolute;
+            }
+            body{  
+                background-image: url('https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                text-align: center;
+                color: yellow;
+                margin-left: 475px;
+                margin-top: 125px;
+            }
+            .box{
+                border: 4px solid red;
+                text-align: center;
+                height: 360px;
+                width: 450px;
+                opacity: inherit;
+            }
+
+            input{
+                opacity: inherit;
+            }
+
+           header {
+            background-image: linear-gradient(purple,greenyellow);
+            color: black;
+            text-align: center;
+            padding: 1em;
+            border-bottom: 3px solid black;
+           }
+        </style>
+    </head>
+    <body>
+        
+        <div class="box">
+            <form action="deleteStudent" method="post">
+                <section id="header">
+                    <h1>Student Detail</h1>
+                </section>
+
+                <br>
+                <h3>Enter The Student ID To Delete</h3>
+
+                <br>
+                <br>
+
+                <div id="form">
+                    <label for="delete_id">Student ID</label>
+                    <input type="text" name="delete" id="delete_id">
+                </div>
+
+                <br>
+                <br>
+
+				<input type="submit" value="Featch">
+                
+            </form>
+        </div>
+
+</body>
+</html>

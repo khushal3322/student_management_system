@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="addstudent" method="post">
+        <label for="name_id">Student Name</label>
+        <input type="text" name="name" id="name_id">
+
+        <label for="contact_id">Contact</label>
+        <input type="number" name="contact" id="contact_id">
+
+        <label>Gender</label>
+        <div>
+          
+            <label for="male_id">Male</label>
+            <input type="radio" name="gender" id="male_id" value="Male">  
+            <label for="female_id">Female</label>
+            <input type="radio" name="gender" id="female_id" value="Female">
+        </div>
+
+        <label for="branch_id">Branch</label>
+        <select name="branch" id="branch_id">
+            <option value="mechanical">Mechanical</option>
+            <option value="civil">Civil</option>
+            <option value="IT">IT</option>
+        </select>
+
+        <label for="Username_id">Username</label>
+        <input type="text" name="Username" id="Username_id">
+
+        <label for="password_id">Password</label>
+        <input type="password" name="password" id="password_id">
+
+        <input type="submit" value="Add">
+    </form>
+</body></html>
